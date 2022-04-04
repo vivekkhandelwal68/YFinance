@@ -1,0 +1,70 @@
+*{
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* #MainMenu{
+
+  visibility: hidden;
+
+} */
+
+
+#microsoft{
+  color: rgb(78, 83, 85);
+  font-size: 35px;
+  text-decoration: underline;
+  
+}
+
+.main{
+  background-color: #F5F5F5;
+}
+
+div.stDateInput > label{
+
+  font-weight: bold;
+
+}
+
+input[placeholder="YYYY/MM/DD"]{
+
+  border: 1px pink solid;
+}
+
+div.stDataFrame{
+
+  border: 2px pink solid;
+  
+}
+
+div.stDataFrame > div:first-of-type > div:first-of-type{
+  font-weight: bold;
+}
+
+img{
+
+  width: 50%;
+
+}
+
+footer{
+
+  visibility: visible;
+
+}
+
+footer::after{
+  content: 'Developed by Vivek Khandelwal';
+  display: block;
+  position: relative;
+  color: rgb(189, 184, 184);
+}
+
+
+
+
+
+
+
