@@ -97,14 +97,14 @@ def final_calculation(symbol, org):
 
 
 def main():
-    with open("style.css") as f:
+    with open("css/style.css") as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
     st.markdown('''<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">''', unsafe_allow_html=True)
 
-    tickers = pd.read_csv("tickers.csv", encoding="ISO-8859-1")
+    tickers = pd.read_csv("csv/tickers.csv", encoding="ISO-8859-1")
     tickers.sort_values(by=['Name'], inplace=True)
-    image = Image.open('logo.png')
+    image = Image.open('logo/logo.png')
     st.sidebar.image(image)
     
     st.sidebar.title("YFinance!")
@@ -116,7 +116,7 @@ def main():
 if __name__ == "__main__":
     st.set_page_config(
      page_title="Share Market App",
-     page_icon="logo.png",
+     page_icon="logo/logo.png",
      layout="wide",
      initial_sidebar_state="expanded",
  )
